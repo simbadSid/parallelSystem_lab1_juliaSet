@@ -52,15 +52,16 @@ int main(int argc, char **argv)
 
 	write_bmp_header(file, width, height);										// Write the file header
 	picturePtr = picture;
-	for (x=0; x<width; x++)														// Write the pixel into the file
+	for (y=0; y<height; y++)														// Write the pixel into the file
 	{
-		for (y=0; y<height; y++)
+		for (x=0; x<width; x++)
 		{
 			fwrite(picturePtr, sizeof(unsigned char), DIMENSION_PIXEL, file);
 			picturePtr += DIMENSION_PIXEL;
 		}
 	}
 
+	free(picture);
 	fclose(file);
 	return 0;
 }

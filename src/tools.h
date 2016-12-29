@@ -21,6 +21,7 @@
 #define DIMENSION_HEIGHT			1
 
 #define OUTPUT_FILE_NAME_SEQUENTIAL	"data/output/pictureSeqential.bmp"
+#define OUTPUT_FILE_NAME_PARALLEL	"data/output/pictureParallel.bmp"
 #define TINT_BIAS					1.0	// TODO to change at Activity 1, step 2
 
 
